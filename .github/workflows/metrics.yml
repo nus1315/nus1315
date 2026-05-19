@@ -10,18 +10,36 @@ jobs:
     permissions:
       contents: write
     steps:
-      # รูปที่ 1: ปฏิทิน 3 มิติ (ฝั่งซ้าย)
-      - name: Isometric Calendar
+      # ==========================================
+      # ISOMETRIC CALENDARS (Left Column)
+      # ==========================================
+
+      # 1. Full Year Isometric Calendar
+      - name: Isometric Calendar (Full Year)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.isocalendar.fullyear.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # 2. Half Year Isometric Calendar
+      - name: Isometric Calendar (Half Year)
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year
+          plugin_isocalendar_duration: half-year
 
-      # รูปที่ 2: ภาษาแบบเจาะลึก (ฝั่งขวา)
-      - name: Indepth Languages
+      # ==========================================
+      # LANGUAGES ACTIVITY (Right Column)
+      # ==========================================
+
+      # 3. Indepth Languages Analysis
+      - name: Indepth Languages Analysis
         uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.languages.indepth.svg
@@ -30,3 +48,66 @@ jobs:
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_details: lines, bytes-size
+
+      # 4. Recently Used Languages
+      - name: Recently Used Languages
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.recent.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: recently-used
+
+      # 5. Default Language Algorithm
+      - name: Default Language Algorithm
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+
+      # 6. Default Language Algorithm with Details
+      - name: Default Language Algorithm with Details
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.languages.details.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_sections: most-used
+          plugin_languages_details: bytes-size, percentage
+
+      # ==========================================
+      # STARGAZERS & LINES (Second Row)
+      # ==========================================
+
+      # 7. Stargazers Classic Chart
+      - name: Stargazers Classic Chart
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.stargazers.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_stargazers: yes
+
+      # 8. Lines of Code History
+      - name: Lines of Code History
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.lines.history.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_lines: yes
+          plugin_lines_history: yes
+
+      # 9. Lines of Code (Base Plugin)
+      - name: Lines of Code (Base Plugin)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics.plugin.lines.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_lines: yes
