@@ -4,4 +4,10 @@ I'm a Computer Engineering and Artificial Intelligence researcher with a strong 
 
 🚀 **My Portfolio:** [https://nus1315.github.io/my-resume/](https://nus1315.github.io/my-resume/)
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=nus1315&layout=compact&theme=radical&langs_count=8&v=1)
+---
+
+### 📊 GitHub Stats & Activity
+
+![Isometric Calendar](https://metrics.lecoq.io/nus1315?template=classic&plugin_isocalendar=yes&plugin_isocalendar_duration=full-year)
+
+![Indepth Languages](https://metrics.lecoq.io/nus1315?template=classic&plugin_languages=yes&plugin_languages_indepth=yes&plugin_languages_details=lines,bytes-size)
