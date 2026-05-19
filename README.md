@@ -6,13 +6,10 @@ I'm a Computer Engineering and Artificial Intelligence researcher with a strong 
 
 ---
 
-### 📊 Languages I Write & Coding Stats
+### 💻 Languages & Tech Stack
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=nus1315&theme=dracula" width="48%" alt="Repositories per Language">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=nus1315&theme=dracula" width="48%" alt="Most Commits per Language">
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nus1315&theme=dracula" width="97%" alt="Profile Details">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,js,java,cs,html,css" alt="My Skills" />
+  </a>
 </p>
