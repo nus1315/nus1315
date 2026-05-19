@@ -8,8 +8,22 @@ I'm a Computer Engineering and Artificial Intelligence researcher with a strong 
 
 ### 💻 Languages & Tech Stack
 
-<p align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,js,java,cs,html,css" alt="My Skills" />
-  </a>
+#### 🧠 Machine Learning & Deep Learning (AI Core)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn,pandas,numpy" alt="AI & ML Stack" />
+</p>
+
+#### 🚀 Programming Languages
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=py,js,ts,cs,java,html,css" alt="Programming Languages" />
+</p>
+
+#### 🌐 Web Development & APIs
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=fastapi,nodejs,react,nextjs" alt="Web & APIs" />
+</p>
+
+#### 🛠️ Databases, Tools & Environments
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=postgres,git,github,docker,linux,ubuntu,vscode" alt="Tools & Environments" />
 </p>
